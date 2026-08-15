@@ -1,0 +1,64 @@
+// Create a simple game where you win if throwing two dice results in the same number. Use if to print You win :) if the dice match or You lose :( otherwise.
+import kotlin.random.Random
+
+fun main() {
+    val firstResult = Random.nextInt(6)
+    val secondResult = Random.nextInt(6)
+    if (firstResult == secondResult)
+    	println("You win :)")
+    else
+    	println("You lose :(")
+}
+
+// Ejercicio 4.2
+/*fun main() {
+    val button = "A"
+
+    println(
+        when (button) {
+            "A" -> "Yes"
+            "B" -> "No"
+            "X" -> "Menu"
+            "Y" -> "Nothing"
+            else -> "There is no such button"
+        }
+    )
+} */
+
+// You have a program that counts pizza slices until there's a whole pizza with 8 slices. Refactor this program in two ways:
+/*fun main() {
+    var pizzaSlices = 0
+
+    while (pizzaSlices < 8) {
+        pizzaSlices++
+        if (pizzaSlices < 8) {
+            println("There's only $pizzaSlices slice/s of pizza :(")
+        }
+    }
+
+    println("There are $pizzaSlices slices of pizza. Hooray! We have a whole pizza! :D")
+}*/
+
+// Write a program that simulates the Fizz buzz game. Your task is to print numbers from 1 to 100 incrementally, replacing any number divisible by three with the word "fizz", and any number divisible by five with the word "buzz". Any number divisible by both 3 and 5 must be replaced with the word "fizzbuzz".
+/*fun main() {
+    for (number in 1..100) {
+        println(
+            when {
+                number % 15 == 0 -> "fizzbuzz"
+                number % 3 == 0 -> "fizz"
+                number % 5 == 0 -> "buzz"
+                else -> "$number"
+            }
+        )
+    }
+}*/
+
+// You have a list of words. Use for and if to print only the words that start with the letter l.
+/*fun main() {
+    val words = listOf("dinosaur", "limousine", "magazine", "language")
+    for (w in words) {
+        if (w.startsWith("l"))
+            println(w)
+    }
+}*/
+
